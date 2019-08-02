@@ -1,0 +1,47 @@
+<link rel="stylesheet" href="//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+<div class="container">
+  
+  <input type="text" placeholder="Search..." name="search" style="float: right"/>
+
+
+  <!-- head -->
+  <div class="row">
+
+    <div class="col">
+      Date
+    </div>
+    <div class="col">
+      Patient Name
+    </div>
+    <div class="col">
+      Doctor Name
+    </div>
+    <div class="col">
+      Illness
+    </div>
+
+
+  </div>
+
+  <br/>
+  <!-- body -->
+  
+  <div class="row" *ngFor="let x of patientList">
+    <br/>
+        <div class="col">
+          {{x.date}}
+        </div>
+        <div class="col">
+          {{x.patientName}}
+        </div>
+        <div class="col">
+          {{x.doctorName}}
+        </div>
+        <div class="col">
+          {{x.illness}}
+        </div>
+
+      </div>
+
+</div>
